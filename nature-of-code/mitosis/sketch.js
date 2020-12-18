@@ -2,7 +2,7 @@ let cells = [];
 
 function setup() {
     createCanvas(400, 400);
-    let cell = new Cell(random(0, width), random(0, height), 100, color(random(0, 100), 200, random(100, 255)));
+    let cell = new Cell(random(0, width), random(0, height), 200, color(random(0, 100), 200, random(100, 255)));
     cells.push(cell);
 }
 
