@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+
+  <script>
+    function submitCustomSize() {
+      let size = document.getElementById("customSize").value;
+      let href = `./game.html?size=${size}`
+      document.location.href = href;
+    }
+  </script>
+  <h1>2048</h1>
+  <p>Pick a size board to play!</p>
+  <a href="./game.html?size=4">4 (default)</a>
+  <br/>
+  <a href="./game.html?size=5">5 (big)</a>
+  <br/>
+  <a href="./game.html?size=8">8 (colossal)</a>
+  <br/>
+  <a href="./game.html?size=12">12 (biblical)</a>
+  <br/>
+  <br/>
+  <label>Choose your own size!</label>
+  <input type="number" min=4 id="customSize">
+  <button onclick="submitCustomSize()">Go!</button>
+</head>
+
+<body>
+</body>
+
+</html>
