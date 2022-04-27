@@ -9,7 +9,7 @@ let QT_ENABLED = true;
 
 function setup() {
   createCanvas(400, 400);
-  frameRate(30);
+  frameRate(60);
 
   boundary = new Rectangle(200,200,200,200);
   allParticles = [];

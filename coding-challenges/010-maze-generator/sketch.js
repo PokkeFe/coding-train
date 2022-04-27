@@ -1,5 +1,5 @@
 let cellSize = 10;
-let mapSize = 40;
+let mapSize = 10;
 let grid;
 let current;
 let next;
@@ -50,12 +50,15 @@ function draw() {
       current = stack.pop()
     }
   }
+
+  current.nextColor();
+  current.show(true);
   
 
 
 
 }
-/* Mouse Click 
+// Mouse Click 
 function mouseClicked() {
   console.log("Clicked");
   let x = floor(mouseX / grid.cellSize);
@@ -68,7 +71,6 @@ function mouseClicked() {
   }
   current = next;
 }
-*/
 
 
 
