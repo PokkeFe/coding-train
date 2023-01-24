@@ -51,9 +51,9 @@ StateMap.set(s.AAGG, {
 // RIGHT TO TOP GROUND
 StateMap.set(s.GAGG, {
     "u": [s.GAGA, s.AAGA],
-    "r": [s.AAGG, s.GAGG, s.AAAG],
+    "r": [s.AAGG, s.AGGG, s.AAAG],
     "d": [s.GGGG],
-    "l": [s.GGGG, s.GAGG, s.GAGA],
+    "l": [s.GGGG, s.AGGG, s.GAGA],
 })
 
 // LEFT TO TOP GROUND
